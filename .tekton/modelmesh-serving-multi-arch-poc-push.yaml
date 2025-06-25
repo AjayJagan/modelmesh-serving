@@ -232,7 +232,7 @@ spec:
         value: $(tasks.clone-repository.results.commit)
       - name: BUILD_ARGS
         value:
-        - DEV_IMAGE=registry.access.redhat.com/ubi9/go-toolset:1.23
+        - DEV_IMAGE=golang:1.23
         - COMMIT_SHA=$(tasks.clone-repository.results.commit)
         - IMAGE_VERSION=$(params.revision)
       - name: BUILD_ARGS_FILE
