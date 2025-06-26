@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.3
+# syntax=docker/dockerfile:1.17
 
 # Copyright 2021 IBM Corporation
 #
