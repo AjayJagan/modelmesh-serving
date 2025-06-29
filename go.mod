@@ -39,6 +39,7 @@ require (
 	golang.org/x/sync v0.10.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20231106174013-bbf56f31fb17 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20231106174013-bbf56f31fb17 // indirect
+	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 )
 
 // when adding or removing to the replace-ments below, remove the following block of
@@ -133,7 +134,6 @@ require (
 	knative.dev/networking v0.0.0-20231115015815-3af9769712cd // indirect
 	knative.dev/serving v0.39.3 // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
-	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 )
 
 replace (
