@@ -336,7 +336,7 @@ spec:
     - name: build-source-image
       params:
       - name: BINARY_IMAGE
-        value: $(params.output-image)
+        value: "$(params.output-image-base):konflux-multi-arch"
       - name: SOURCE_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       - name: CACHI2_ARTIFACT
@@ -480,7 +480,7 @@ spec:
       - name: image-url
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE
-        value: $(params.output-image)
+        value: "$(params.output-image-base):konflux-multi-arch"
       - name: DOCKERFILE
         value: $(params.dockerfile)
       - name: CONTEXT
