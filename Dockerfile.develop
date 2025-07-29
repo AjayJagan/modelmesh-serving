@@ -70,7 +70,7 @@ RUN true \
 
 # Download openshift-cli
 RUN true \
-    && curl -sSLf --output /tmp/oc_client.tar.gz https://mirror.openshift.com/pub/openshift-v4/${TARGETARCH:-amd64}/clients/ocp/latest-${OPENSHIFT_VERSION}/openshift-client-${TARGETOS:-linux}.tar.gz \
+    && curl -sSLf --output /tmp/oc_client.tar.gz "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest-${OPENSHIFT_VERSION}/openshift-client-linux-${TARGETARCH:-amd64}.tar.gz" \
     && tar -xvf /tmp/oc_client.tar.gz -C /tmp \
     && mv /tmp/oc /usr/local/bin \
     && mv /tmp/kubectl /usr/local/bin \
